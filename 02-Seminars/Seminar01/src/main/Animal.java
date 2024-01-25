@@ -18,7 +18,6 @@ public class Animal {
 
     public Animal() {
         this("Кличка", new Owner("Хозяин"), LocalDate.now(), new Illness("Болеет"));
-
     }
 
     public String getNickName() {
