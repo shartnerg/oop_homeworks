@@ -1,8 +1,6 @@
 package main;
 
-import main.clients.Animal;
-import main.clients.Illness;
-import main.clients.Owner;
+import main.clients.*;
 
 import java.time.LocalDate;
 
@@ -28,12 +26,13 @@ public class Main {
 
         cat.lifeCycle();
 
+        Cat catty = new Cat();
+        Dog goodBoy = new Dog();
 
-        System.out.println(cat.getType());
+        System.out.println(goodBoy.getType());
+        System.out.println(catty.getType());
 
-        System.out.println(cat);
-
-
+        System.out.println(catty);
     }
 }
 
