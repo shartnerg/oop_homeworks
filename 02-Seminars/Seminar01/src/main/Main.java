@@ -8,11 +8,15 @@ public class Main {
         Animal cat = new Animal("Солнышко", new Owner("Сергей Валерьевич"),
                 LocalDate.of(2021, 10, 05), new Illness("Лишай")); //Создаём экземпляр класса
 
-        System.out.println(cat.owner);
-        System.out.println(cat.nickName);
-        cat.nickName = "Барсик";
+        System.out.println(cat.getOwner());
+        System.out.println(cat.getNickName());
+        System.out.println("Болезнь:" + cat.getIllness());
 
-        System.out.println(cat.nickName);
+        System.out.println(cat.getNickName());
+
+        cat.setIllness(new Illness(null));
+
+        System.out.println("Болезнь:" + cat.getIllness());
     }
 }
 

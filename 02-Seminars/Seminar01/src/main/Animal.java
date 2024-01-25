@@ -31,4 +31,8 @@ public class Animal {
     public Illness getIllness() {
         return illness;
     }
+
+    public void setIllness(Illness illness) {
+        this.illness = illness;
+    }
 }
