@@ -25,6 +25,11 @@ public class Cat extends Animal {
         this.discount = discount;
     }
 
+    //Todo статикой пользоваться аккуратно ( пароли там не хранить :-) )
+    public static void meow(){
+        System.out.println("Мяяяу!");
+    }
+
     @Override
     public String toString() {
         return super.toString()+"Discount("+discount+")";

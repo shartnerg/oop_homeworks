@@ -33,6 +33,8 @@ public class Main {
         System.out.println(catty.getType());
 
         System.out.println(catty);
+
+        Cat.meow();
     }
 }
 
