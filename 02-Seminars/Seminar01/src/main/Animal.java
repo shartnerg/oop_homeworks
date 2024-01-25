@@ -15,4 +15,20 @@ public class Animal {
         this.birthDate = birthDate;
         this.illness = illness;
     }
+
+    public String getNickName() {
+        return nickName;
+    }
+
+    public Owner getOwner() {
+        return owner;
+    }
+
+    public LocalDate getBirthDate() {
+        return birthDate;
+    }
+
+    public Illness getIllness() {
+        return illness;
+    }
 }
