@@ -16,6 +16,13 @@ public class Animal {
         this.illness = illness;
     }
 
+    public Animal() {
+        this.nickName = "Кличка";
+        this.owner = new Owner("Хозяин");
+        this.birthDate = LocalDate.now();
+        this.illness = new Illness("Болеет");
+    }
+
     public String getNickName() {
         return nickName;
     }

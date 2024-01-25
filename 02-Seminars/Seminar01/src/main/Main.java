@@ -17,6 +17,11 @@ public class Main {
         cat.setIllness(new Illness(null));
 
         System.out.println("Болезнь:" + cat.getIllness());
+
+
+        Animal testAnimal = new Animal();
+        System.out.println(testAnimal.getNickName());
+
     }
 }
 
