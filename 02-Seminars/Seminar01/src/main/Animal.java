@@ -39,4 +39,27 @@ public class Animal {
     public void setIllness(Illness illness) {
         this.illness = illness;
     }
+
+    public void lifeCycle(){
+        wakeUp();
+        hunt();
+        eat();
+        sleep();
+    }
+
+    private void wakeUp(){
+        System.out.println("Животное проснулось!");
+    }
+
+    private void hunt(){
+        System.out.println("Животное охотится!");
+    }
+
+    private void eat(){
+        System.out.println("Животное ест!");
+    }
+
+    private void sleep(){
+        System.out.println("Животное уснуло!");
+    }
 }

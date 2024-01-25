@@ -22,6 +22,9 @@ public class Main {
         Animal testAnimal = new Animal();
         System.out.println(testAnimal.getNickName());
 
+        cat.lifeCycle();
+
+
     }
 }
 
