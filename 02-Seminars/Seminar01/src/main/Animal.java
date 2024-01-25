@@ -41,14 +41,18 @@ public class Animal {
     }
 
     public void lifeCycle() {
-        wakeUp();
+        wakeUp("12:00");
         hunt();
         eat();
         sleep();
     }
 
     private void wakeUp() {
-        System.out.println("Животное " + nickName + " проснулось!");
+        wakeUp("12:00");
+    }
+
+    private void wakeUp(String time) {
+        System.out.println("Животное " + nickName + " проснулось в " + time);
     }
 
     public String getType() {
