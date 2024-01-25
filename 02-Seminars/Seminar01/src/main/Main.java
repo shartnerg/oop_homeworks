@@ -25,6 +25,11 @@ public class Main {
         cat.lifeCycle();
 
 
+        System.out.println(cat.getType());
+
+        System.out.println(cat);
+
+
     }
 }
 

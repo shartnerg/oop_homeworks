@@ -6,4 +6,13 @@ public class Owner {
     public Owner(String fullName) {
         this.fullName = fullName;
     }
+
+
+    @Override
+    public String toString() {
+        return "Owner{" +
+                "fullName='" + fullName + '\'' +
+                '}';
+    }
 }
+
