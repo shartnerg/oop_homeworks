@@ -1,12 +1,14 @@
-package main;
+package main.clients;
 
 import java.time.LocalDate;
 
 public class Animal {
-    private String nickName;
-    private Owner owner;
-    private LocalDate birthDate;
-    private Illness illness;
+
+    // protected видно в классе и во всех наследниках
+    protected String nickName;
+    protected Owner owner;
+    protected LocalDate birthDate;
+    protected Illness illness;
 
     // Это пустой конструктор (по умолчанию)
     public Animal(String nickName, Owner owner, LocalDate birthDate, Illness illness) {

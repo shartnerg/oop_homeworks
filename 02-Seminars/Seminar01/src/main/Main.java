@@ -1,5 +1,9 @@
 package main;
 
+import main.clients.Animal;
+import main.clients.Illness;
+import main.clients.Owner;
+
 import java.time.LocalDate;
 
 public class Main {
