@@ -3,6 +3,8 @@ package main;
 import main.clients.*;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -26,7 +28,7 @@ public class Main {
 
         cat.lifeCycle();
 
-        Cat catty = new Cat();
+        Animal catty = new Cat();
         Dog goodBoy = new Dog();
 
         System.out.println(goodBoy.getType());
@@ -35,6 +37,19 @@ public class Main {
         System.out.println(catty);
 
         Cat.meow();
+
+        List<Animal> animals = new ArrayList<Animal>();
+
+        animals.add(catty);
+        animals.add(goodBoy);
+        animals.add(cat);
+
+        int i = 0;
+        for (Animal animal : animals){
+            System.out.println(i + " "+ animal);
+            i++;
+        }
+
     }
 }
 
