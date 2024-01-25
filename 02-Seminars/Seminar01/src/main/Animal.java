@@ -17,10 +17,8 @@ public class Animal {
     }
 
     public Animal() {
-        this.nickName = "Кличка";
-        this.owner = new Owner("Хозяин");
-        this.birthDate = LocalDate.now();
-        this.illness = new Illness("Болеет");
+        this("Кличка", new Owner("Хозяин"), LocalDate.now(), new Illness("Болеет"));
+
     }
 
     public String getNickName() {
