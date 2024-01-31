@@ -8,14 +8,11 @@ public class Cat extends Animal {
     Double discount;
 
     public Cat(String nickName, Owner owner, LocalDate birthDate, Illness illness, Double discount) {
-        super(nickName, owner, birthDate, illness); //Todo сначала конструктор Супер-класса
+        super(nickName, owner, birthDate, illness); // сначала конструктор Супер-класса
         this.discount = discount;
     }
 
-    public Cat() {
-        super();
-        this.discount = 10D;
-    }
+
 
     public Double getDiscount() {
         return discount;
@@ -25,7 +22,6 @@ public class Cat extends Animal {
         this.discount = discount;
     }
 
-    //Todo статикой пользоваться аккуратно ( пароли там не хранить :-) )
     public static void meow(){
         System.out.println("Мяяяу!");
     }
@@ -34,4 +30,15 @@ public class Cat extends Animal {
     public String toString() {
         return super.toString()+"Discount("+discount+")";
     }
+
+    @Override
+    public void fly() {
+        System.out.println("Животное не может летать");
+    }
+    @Override
+    public void swim() {
+        System.out.println("Животное не может плавать");
+    }
+
+
 }

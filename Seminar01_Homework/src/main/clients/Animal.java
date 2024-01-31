@@ -18,9 +18,9 @@ public class Animal {
         this.illness = illness;
     }
 
-    public Animal() {
-        this("Кличка", new Owner("Хозяин"), LocalDate.now(), new Illness("Болеет"));
-    }
+//    public Animal() {
+//        this("Кличка", new Owner("Хозяин"), LocalDate.now(), new Illness("Болеет"));
+//    }
 
     public String getNickName() {
         return nickName;
@@ -46,6 +46,9 @@ public class Animal {
         wakeUp("12:00");
         hunt();
         eat();
+        toGo();
+        fly();
+        swim();
         sleep();
     }
 
@@ -69,9 +72,19 @@ public class Animal {
         System.out.println("Животное ест!");
     }
 
+    public void toGo() {
+        System.out.println("Животное двигается!");
+    }
+    public void fly() {
+        System.out.println("Животное летает!");
+    }
+    public void swim() {
+        System.out.println("Животное плавает!");
+    }
     private void sleep() {
         System.out.println("Животное уснуло!");
     }
+
 
     @Override
     public String toString() {
